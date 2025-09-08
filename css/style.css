@@ -1,0 +1,422 @@
+/* ================================= */
+/* === COMPLETE PORTFOLIO CSS ===== */
+/* ================================= */
+
+/* --- 1. Root Variables & Global Setup --- */
+:root {
+    /* --- Light Mode Colors --- */
+    --bg-light: #f8f9fa;
+    --card-bg-light: #ffffff;
+    --text-light: #212529;
+    --subtle-text-light: #6c757d;
+    --accent-light: #0056b3; /* A strong, professional blue */
+    --hover-light: #007bff;
+
+    /* --- Dark Mode Colors --- */
+    --bg-dark: #121212;
+    --card-bg-dark: #1e1e1e;
+    --text-dark: #e9ecef;
+    --subtle-text-dark: #adb5bd;
+    --accent-dark: #4dabf7; /* A brighter blue for dark mode */
+    --hover-dark: #1c7ed6;
+
+    /* --- Typography & Layout --- */
+    --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    --shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-family);
+    transition: background-color 0.3s, color 0.3s;
+    background-color: var(--bg-light);
+    color: var(--text-light);
+}
+
+body.dark-mode {
+    background-color: var(--bg-dark);
+    color: var(--text-dark);
+}
+
+/* --- 2. Navigation Bar --- */
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+body.dark-mode .navbar {
+    background: rgba(30, 30, 30, 0.8);
+}
+
+.nav-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+
+.nav-brand {
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.nav-links a:hover {
+    color: var(--hover-light);
+}
+
+body.dark-mode .nav-links a:hover {
+    color: var(--hover-dark);
+}
+
+.nav-controls {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* --- 3. Language Switcher --- */
+.lang-switcher {
+    position: relative;
+}
+
+.lang-button {
+    background: none;
+    border: 1px solid var(--subtle-text-light);
+    color: var(--subtle-text-light);
+    padding: 0.3rem 0.6rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+body.dark-mode .lang-button {
+    border-color: var(--subtle-text-dark);
+    color: var(--subtle-text-dark);
+}
+
+.lang-dropdown {
+    display: none;
+    position: absolute;
+    top: 100%; /* Changed from 120% to remove the gap */
+    right: 0;
+    background: var(--card-bg-light);
+    list-style: none;
+    border-radius: 8px;
+    padding: 0.5rem 0;
+    box-shadow: var(--shadow);
+    width: 120px;
+    overflow: hidden;
+    /* Add a small amount of padding to the top to keep the hover state */
+    padding-top: 10px; 
+    margin-top: -10px;
+}
+
+body.dark-mode .lang-dropdown {
+    background: var(--card-bg-dark);
+}
+
+.lang-switcher:hover .lang-dropdown {
+    display: block;
+}
+
+.lang-dropdown a {
+    display: block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: inherit;
+}
+
+.lang-dropdown a:hover {
+    background-color: var(--bg-light);
+}
+
+body.dark-mode .lang-dropdown a:hover {
+    background-color: var(--bg-dark);
+}
+
+.lang-dropdown a.active {
+    font-weight: 700;
+    color: var(--accent-light);
+}
+
+body.dark-mode .lang-dropdown a.active {
+    color: var(--accent-dark);
+}
+
+/* --- 4. Theme Toggle Button --- */
+#theme-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.4rem;
+    color: var(--subtle-text-light);
+    transition: color 0.2s;
+}
+
+body.dark-mode #theme-toggle {
+    color: var(--subtle-text-dark);
+}
+
+#theme-toggle:hover {
+    color: var(--text-light);
+}
+
+body.dark-mode #theme-toggle:hover {
+    color: var(--text-dark);
+}
+
+/* --- 5. Hero Section --- */
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    padding: 60px 1.5rem 2rem;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1.5rem;
+    box-shadow: var(--shadow);
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.headline {
+    font-size: 1.25rem;
+    color: var(--subtle-text-light);
+    margin: 0.5rem 0 1.5rem;
+}
+
+body.dark-mode .headline {
+    color: var(--subtle-text-dark);
+}
+
+.bio {
+    max-width: 600px;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+.cta-button {
+    display: inline-block;
+    background: var(--accent-light);
+    color: #fff;
+    padding: 0.8rem 1.6rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+body.dark-mode .cta-button {
+    background: var(--accent-dark);
+}
+
+.cta-button:hover {
+    background: var(--hover-light);
+    transform: translateY(-2px);
+}
+
+body.dark-mode .cta-button:hover {
+    background: var(--hover-dark);
+}
+
+/* --- 6. Content Sections Layout --- */
+.content-section {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 5rem 1.5rem;
+    text-align: center;
+}
+
+.content-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+/* --- 7. Project & Activity Card Grid --- */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    text-align: left;
+}
+
+.card {
+    background: var(--card-bg-light);
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+body.dark-mode .card {
+    background: var(--card-bg-dark);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+}
+
+.card-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 1.5rem;
+}
+
+.card h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+}
+
+.card p {
+    color: var(--subtle-text-light);
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+body.dark-mode .card p {
+    color: var(--subtle-text-dark);
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.tags span {
+    background: var(--bg-light);
+    color: var(--subtle-text-light);
+    padding: 0.25rem 0.75rem;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+body.dark-mode .tags span {
+    background: var(--bg-dark);
+    color: var(--subtle-text-dark);
+}
+
+.card-link {
+    text-decoration: none;
+    color: var(--accent-light);
+    font-weight: 600;
+}
+
+body.dark-mode .card-link {
+    color: var(--accent-dark);
+}
+
+.card-link i {
+    transition: transform 0.2s;
+}
+
+.card-link:hover i {
+    transform: translateX(4px);
+}
+
+/* --- 8. Contact Section --- */
+#contact .socials {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    font-size: 2rem;
+    margin: 2rem 0 3rem;
+}
+
+#contact .socials a {
+    color: var(--subtle-text-light);
+    transition: color 0.2s, transform 0.2s;
+}
+
+body.dark-mode #contact .socials a {
+    color: var(--subtle-text-dark);
+}
+
+#contact .socials a:hover {
+    color: var(--hover-light);
+    transform: scale(1.2);
+}
+
+body.dark-mode #contact .socials a:hover {
+    color: var(--hover-dark);
+}
+
+.final-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+/* --- 9. Footer --- */
+.footer {
+    text-align: center;
+    padding: 2rem;
+    color: var(--subtle-text-light);
+}
+
+body.dark-mode .footer {
+    color: var(--subtle-text-dark);
+}
