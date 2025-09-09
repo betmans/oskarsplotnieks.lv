@@ -26,35 +26,35 @@ const translations = {
     contact_title: "Get in Touch & Find Me Online",
     contact_cv: "Download My CV",
     contact_email: "Send Me an Email",
-    footer_text: "&copy; 2025 Jānis Ozols. Built with passion in Riga."
+    footer_text: "&copy; 2025 Oskars Plotnieks."
   },
   lv: {
     title: "Oskars Plotnieks | Mehatronika un aizstāvība",
     nav_projects: "Projekti",
     nav_activities: "Aktivitātes",
-    nav_contact: "Kontakti",
+    nav_contact: "Kontaktinformācija",
     lang_en: "Angļu",
     lang_lv: "Latviešu",
-    headline: "Topošais mehatronikas inženieris | Tīmekļa izstrādātājs | Aizraujas ar vēsturi, politiku un ģeogrāfiju",
-    bio: "Veidoju saredzitas robotizētas sistēmas, lai izaicinātu sevi.",
+    headline: "Topošais mehatronikas inženieris | Tīmekļa izstrādātājs | Aizrauj vēsture, politika un ģeogrāfija",
+    bio: "Veidoju saredžītas robotizētas sistēmas, lai izaicinātu sevi.",
     cta_button: "Apskatīt manus darbus",
     projects_title: "Mehatronikas projekti",
     project1_title: "Drons",
-    project1_desc: "Viduskolā robotikas mācibu priekšmata kura nobeiguma darbā izveidoju dronu",
+    project1_desc: "Viduskolā robotikas mācību priekšmeta kursa nobeiguma darbā izveidoju dronu",
     project1_link: "Apskatīt dokumentāciju",
     project2_title: "Lietu interneta (IoT) laika apstākļu stacija",
     project2_desc: "Ar saules enerģiju darbināma laika apstākļu stacija, kas straumē reāllaika temperatūras, mitruma un spiediena datus uz tīmekļa informācijas paneli.",
     project2_link: "Apskatīt paneli",
     activities_title: "Pilsoniskās un politiskās aktivitātes",
     activity1_title: "Eiropas parlamenta vēstnieku skola",
-    activity1_desc: "Aki...tīv",
+    activity1_desc: "No 2022.gada līdz 2025. gadam aktīvi darbojos Salaspils 1. vidusskolas Eiropas Parlamenta vēstnieku skolas pulciņā, palīdzēju izdomāt idejas projektiem un praktiskus veidus kā tos realizēt. Projekti bija vērsti gan uz skolas jauniešu, gan plašākas Salaspils sabiedrības informēšanu par Eiropas Savienības vērtībām un aktualitātēm. Piedalījos Euroscola pasākumā Strasbūrā, kur aizstāvēju savu viedokli starp 600 jauniešiem no visas Eiropas Savienības.",
     activity1_link: "Apskatīt sertifikātus",
     activity2_title: "11. Jauniešu Saeima",
     activity2_desc: "Aizstāvēju ideju par striktāku nikotīna produktu regulējumu, lai aizsargātu jauniešus no atkarības.",
     activity2_link: "Apskatīt ideju",
-    contact_title: "Sazinieties un atrodiet mani tiešsaistē",
+    contact_title: "Sazinaties ar mani un atrodiet mani tiešsaistē",
     contact_cv: "Lejupielādēt manu CV",
     contact_email: "Nosūtīt man e-pastu",
-    footer_text: "&copy; 2025 Jānis Ozols. Radīts ar aizrautību Rīgā."
+    footer_text: "&copy; 2025 Oskars Plotnieks."
   }
 };
