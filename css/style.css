@@ -420,3 +420,58 @@ body.dark-mode #contact .socials a:hover {
 body.dark-mode .footer {
     color: var(--subtle-text-dark);
 }
+
+/* --- 10. Academic Success Section --- */
+.awards-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.award-item {
+    background: var(--card-bg-light);
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: var(--shadow);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.3s;
+}
+
+body.dark-mode .award-item {
+    background: var(--card-bg-dark);
+}
+
+.award-item:hover {
+    transform: translateY(-3px);
+}
+
+.award-details h3 {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.award-details p {
+    color: var(--subtle-text-light);
+    margin: 0.25rem 0 0;
+}
+
+body.dark-mode .award-details p {
+    color: var(--subtle-text-dark);
+}
+
+.award-place {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--accent-light);
+    white-space: nowrap;
+    margin-left: 1rem;
+}
+
+body.dark-mode .award-place {
+    color: var(--accent-dark);
+}
