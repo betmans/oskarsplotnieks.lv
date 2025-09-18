@@ -475,3 +475,19 @@ body.dark-mode .award-details p {
 body.dark-mode .award-place {
     color: var(--accent-dark);
 }
+
+/* --- 11. Academic Year Headers --- */
+.academic-year-header {
+    text-align: left;
+    max-width: 800px;
+    margin: 3rem auto 1.5rem;
+    font-size: 1.5rem;
+    color: var(--accent-light);
+    border-bottom: 2px solid var(--accent-light);
+    padding-bottom: 0.5rem;
+}
+
+body.dark-mode .academic-year-header {
+    color: var(--accent-dark);
+    border-bottom-color: var(--accent-dark);
+}
