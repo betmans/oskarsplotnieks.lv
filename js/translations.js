@@ -19,7 +19,7 @@ const translations = {
     
     web_projects_title: "Web Projects",
     web_project1_title: "kvits.lv",
-    web_project1_desc: "A company website built using HTML, CSS, and JavaScript.",
+    web_project1_desc: "A company website built from scratch.",
     web_project1_link: "View the Website",
 
     activities_title: "Civic & Political Activities",
@@ -64,6 +64,7 @@ const translations = {
     contact_cv: "Download My CV",
     contact_email: "Send Me an Email",
     footer_text: "&copy; 2025 Oskars Plotnieks.",
+    cv_file: "English.pdf",
 
     tag_arduino: "Arduino",
     tag_cpp: "C++",
@@ -142,6 +143,7 @@ const translations = {
     contact_cv: "Lejupielādēt manu CV",
     contact_email: "Nosūtīt man e-pastu",
     footer_text: "&copy; 2025 Oskars Plotnieks.",
+    cv_file: "Latviski.pdf",
 
     tag_arduino: "Arduino",
     tag_cpp: "C++",
@@ -153,6 +155,14 @@ const translations = {
     tag_eu_politics: "ES politika",
     tag_organizer: "Organizators",
     tag_community: "Sabiedrības iesaiste",
-    tag_lv_politics: "Latvijas politika"
+    tag_lv_politics: "Latvijas politika",
+    tag_html: "HTML",
+    tag_css: "CSS",
+    tag_javascript: "JavaScript",
+    tag_python: "Python",
+    tag_django: "Django",
+    tag_postgresql: "PostgreSQL",
+    tag_googlecloud: "Google Cloud"
+
   }
 };

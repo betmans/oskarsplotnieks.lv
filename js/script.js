@@ -42,6 +42,12 @@ function setLanguage(lang) {
             }
         }
     });
+
+    // Update the CV download link
+    const cvLink = document.querySelector('a[data-key="contact_cv"]');
+    if (cvLink && translations[lang] && translations[lang].cv_file) {
+        cvLink.setAttribute('href', translations[lang].cv_file);
+    }
 }
 
 langOptions.forEach(option => {
