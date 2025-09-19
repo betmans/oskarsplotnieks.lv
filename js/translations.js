@@ -64,7 +64,7 @@ const translations = {
     contact_cv: "Download My CV",
     contact_email: "Send Me an Email",
     footer_text: "&copy; 2025 Oskars Plotnieks.",
-    cv_file: "CV Oskars Plotnieks EN.pdf",
+    cv_file: "Oskars Plotnieks EN.pdf",
 
     tag_arduino: "Arduino",
     tag_cpp: "C++",
@@ -143,7 +143,7 @@ const translations = {
     contact_cv: "Lejupielādēt manu CV",
     contact_email: "Nosūtīt man e-pastu",
     footer_text: "&copy; 2025 Oskars Plotnieks.",
-    cv_file: "CV Oskars Plotnieks LV.pdf",
+    cv_file: "Oskars Plotnieks LV.pdf",
 
     tag_arduino: "Arduino",
     tag_cpp: "C++",
