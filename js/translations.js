@@ -30,7 +30,7 @@ const translations = {
     activity2_link: "View the Proposal",
 
     academic_title: "Academic Success",
-    view_certificate: "View Certificate",
+    view_certificate: "View Certificate of Achievement",
     year_24_25: "2024/2025 Academic Year",
     olympiad1_subject: "18th National Politics and Law Olympiad",
     olympiad1_level: "National level",
