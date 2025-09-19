@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Oskars Plotnieks - topošais mehatronikas inženieris un web izstrādātājs. Apskati manus mehatronikas projektus, web izstrādes darbus un sabiedriskās aktivitātes.">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
-    
-    <title data-key="title"></title>
+    <title data-key="title">Oskars Plotnieks</title>
 </head>
 <body>
 
@@ -37,7 +39,7 @@
 
     <header class="hero">
         <div class="hero-content">
-            <img src="12b-ALK02687-salaspils-1-vsk-liela-skola-p-c1(kvadrats).JPG" alt="Oskars Plotnieks" class="profile-pic">
+            <img src="Pictures/12b-ALK02687-salaspils-1-vsk-liela-skola-p-c1(kvadrats).JPG" alt="Oskars Plotnieks" class="profile-pic">
             <h1>Oskars Plotnieks</h1>
             <p class="headline" data-key="headline"></p>
             <p class="bio" data-key="bio"></p>
@@ -50,7 +52,7 @@
             <h2 data-key="projects_title"></h2>
             <div class="grid-container">
                 <div class="card">
-                    <img src="20240523_160228.jpg" alt="Project Image" class="card-img">
+                    <img src="Pictures/20240523_160228.jpg" alt="Drone" class="card-img">
                     <div class="card-content">
                         <h3 data-key="project1_title"></h3>
                         <p data-key="project1_desc"></p>
@@ -70,7 +72,7 @@
             <h2 data-key="web_projects_title"></h2>
             <div class="grid-container">
                 <div class="card">
-                    <img src="logo.png" alt="Project Image" class="card-img">
+                    <img src="Pictures/logo.png" alt="Kvits logo" class="card-img">
                     <div class="card-content">
                         <h3 data-key="web_project1_title"></h3>
                         <p data-key="web_project1_desc"></p>
@@ -93,7 +95,7 @@
             <h2 data-key="activities_title"></h2>
             <div class="grid-container">
                  <div class="card">
-                    <img src="IMG-20250209-WA0005.jpg" alt="Activity Image" class="card-img">
+                    <img src="Pictures/IMG-20250209-WA0005.jpg" alt="DebatING" class="card-img">
                     <div class="card-content">
                         <h3 data-key="activity1_title"></h3>
                         <p data-key="activity1_desc"></p>
@@ -101,13 +103,25 @@
                             <span data-key="tag_debate"></span>
                             <span data-key="tag_community"></span>
                             <span data-key="tag_organizer"></span>
-
                         </div>
-                        <a href="https://drive.google.com/drive/folders/1G4G0c-Qk_3izRG9ygXFtvhjSMAGyqwHd?usp=drive_link" target="_blank" class="card-link" data-key="activity1_link"></a>
+                        <div class="certificate-gallery">
+                            <a href="Pictures/ES_skola/Vestnieku_skola(2022).jpg" target="_blank">
+                                <img src="Pictures/ES_skola/Vestnieku_skola(2022).jpg" alt="Vestnieku Skola 2022" class="gallery-image">
+                            </a>
+                            <a href="Pictures/ES_skola/Vestnieku_skola(2023).jpg" target="_blank">
+                                <img src="Pictures/ES_skola/Vestnieku_skola(2023).jpg" alt="Vestnieku Skola 2023" class="gallery-image">
+                            </a>
+                            <a href="Pictures/ES_skola/Vestnieku_skola(2024).jpg" target="_blank">
+                                <img src="Pictures/ES_skola/Vestnieku_skola(2024).jpg" alt="Vestnieku Skola 2024" class="gallery-image">
+                            </a>
+                             <a href="Pictures/ES_skola/Euroscola.jpg" target="_blank">
+                                <img src="Pictures/ES_skola/Euroscola.jpg" alt="Euroscola" class="gallery-image">
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="20240426_134715.jpg" alt="Activity Image" class="card-img">
+                    <img src="Pictures/20240426_134715.jpg" alt="Latvian parliament" class="card-img">
                     <div class="card-content">
                         <h3 data-key="activity2_title"></h3>
                         <p data-key="activity2_desc"></p>
@@ -116,6 +130,11 @@
                             <span data-key="tag_lv_politics"></span>
                         </div>
                         <a href="Mazināt jauniešos atkarību no nikotīna saturošām vielām!.pdf" target="_blank" class="card-link" data-key="activity2_link"></a>
+                        <div class="certificate-gallery">
+                            <a href="Pictures/Jauniešu_Saeima(2024).jpg" target="_blank">
+                                <img src="Pictures/Jauniešu_Saeima(2024).jpg" alt="Jauniešu Saeima apliecinājums" class="gallery-image">
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -124,7 +143,10 @@
         <section id="academic-success" class="content-section">
             <h2 data-key="academic_title"></h2>
             
-            <h3 class="academic-year-header" data-key="year_24_25"></h3>
+            <div class="academic-year-container">
+                <h3 class="academic-year-header" data-key="year_24_25"></h3>
+                <a href="Pictures/Pateicibas_raksti/Pateicības_raksts_2025.jpg" target="_blank" class="certificate-link" data-key="view_certificate"></a>
+            </div>
             <div class="awards-list">
                 <div class="award-item">
                     <div class="award-details">
@@ -140,14 +162,14 @@
                     </div>
                     <div class="award-place" data-key="olympiad2_place"></div>
                 </div>
-                                <div class="award-item">
+                <div class="award-item">
                     <div class="award-details">
                         <h3 data-key="olympiad3_subject"></h3>
                         <p data-key="olympiad3_level"></p>
                     </div>
                     <div class="award-place" data-key="olympiad3_place"></div>
                 </div>
-                                <div class="award-item">
+                <div class="award-item">
                     <div class="award-details">
                         <h3 data-key="olympiad4_subject"></h3>
                         <p data-key="olympiad4_level"></p>
@@ -156,7 +178,10 @@
                 </div>
             </div>
 
-            <h3 class="academic-year-header" data-key="year_23_24"></h3>
+            <div class="academic-year-container">
+                <h3 class="academic-year-header" data-key="year_23_24"></h3>
+                <a href="Pictures/Pateicibas_raksti/Pateicības_raksts_2024.jpg" target="_blank" class="certificate-link" data-key="view_certificate"></a>
+            </div>
             <div class="awards-list">
                 <div class="award-item">
                     <div class="award-details">
@@ -174,7 +199,10 @@
                 </div>
             </div>
 
-            <h3 class="academic-year-header" data-key="year_22_23"></h3>
+            <div class="academic-year-container">
+                <h3 class="academic-year-header" data-key="year_22_23"></h3>
+                <a href="Pictures/Pateicibas_raksti/Pateicības_raksts_2023.jpg" target="_blank" class="certificate-link" data-key="view_certificate"></a>
+            </div>
             <div class="awards-list">
                 <div class="award-item">
                     <div class="award-details">
@@ -185,7 +213,10 @@
                 </div>
             </div>
 
-            <h3 class="academic-year-header" data-key="year_21_22"></h3>
+            <div class="academic-year-container">
+                <h3 class="academic-year-header" data-key="year_21_22"></h3>
+                <a href="Pictures/Pateicibas_raksti/Pateicības_raksts_2022.jpg" target="_blank" class="certificate-link" data-key="view_certificate"></a>
+            </div>
             <div class="awards-list">
                     <div class="award-item">
                         <div class="award-details">
@@ -207,7 +238,7 @@
                 <a href="https://www.instagram.com/plotnieksoskars/" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
             </div>
             <div class="final-links">
-                <a href="English.pdf" class="cta-button" data-key="contact_cv"></a>
+                <a href="CV Oskars Plotnieks EN.pdf" class="cta-button" data-key="contact_cv"></a>
                 <a href="mailto:oskarsplotnieks@gmail.com" class="cta-button" data-key="contact_email"></a>
             </div>
         </section>
